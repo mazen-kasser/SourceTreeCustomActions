@@ -1,0 +1,20 @@
+#!/bin/bash
+
+BASE_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+ACTIONS_DIR=$BASE_PATH/bin
+SOURCETREE_DIR=~/Library/Application\ Support/SourceTree
+NOW=$(date '+%Y-%m-%d_%H.%M.%S')
+
+for filepath in "$ACTIONS_DIR/"*.sh; do
+    filename=$(basename "$filepath")
+    cp "$ACTIONS_DIR/$filename" "$SOURCETREE_DIR/$filename"
+done
+
+# Make a backup
+mkdir "$ACTIONS_DIR/actions_backups"
+cp "$SOURCETREE_DIR/actions.plist" "$ACTIONS_DIR/actions_backups/$NOW.plist"
+
+# Update custom actions
+cp "$ACTIONS_DIR/actions.plist" "$SOURCETREE_DIR/actions.plist"
+
+echo "Done 🎉"
