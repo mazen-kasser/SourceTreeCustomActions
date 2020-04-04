@@ -1,28 +1,52 @@
-# Source Tree Extra Actions
+# Source Tree Custom Actions
 
-A collection of SourceTree Custom Actions to Create and Pull a git Bundle. 
+A collection of SourceTree Custom Actions:
 
-## General
+- Create Bundle
+- Pull Bundle
 
-The Custom Actions of SourceTree are stored at `~/Library/Application\ Support/SourceTree/actions.plist`.
+## How To Install
 
-## How To Use
+- Double click the `install` file or run in terminal the shell script `./install`
+- Re-launch the SourceTree App
 
-1) Copy bash scripts to `~/Library/Application\ Support/SourceTree/`
+![Custom Actions Installed](/screenshots/installed-custom-actions.png)
 
-2) Go to `SourceTree -> Preferences -> Custom Actions` 
+**Warning ⚠️ the `install` script takes a copy of your existing SourceTree `actions.plist` file as a backup and stores it under `bin/actions_backup`. Please follow the Advanced section to manually add custom actions.**
 
-### Advanced (Add / Edit)
+## Usage
 
-Go to `SourceTree -> Preferences -> Custom Actions -> Edit...` and fill custom action with parameters:
+From within SourceTree you could do the following:
 
-Menu Caption: <Action Name>
+#### 1) Create Bundle
+```
+- Shortcut: '⌘' + '↑'
+- Parameter: select the root commit
+- Output: a bundle file named according to the active branch containing all the commits after the selected root commit
 
-✅ Show Full Output
+Select the root commit then click on Actions -> Custom Actions -> Create bundle
+```
 
-Script to run: `~/Library/Application\ Support/SourceTree/<action_name>.sh`
+#### 2) Pull Bundle
+```
+- Shortcut: '⌘' + '↓'
+- Parameter: select the generated bundle from step 1
+- Output: fetch commits and checkout a branch based on the bundle name
 
-Parameters: {$REPO, $FILE, $SHA}
+Select the bundle file then click on Actions -> Custom Actions -> Pull bundle
+```
+
+## Advanced (Add / Edit)
+
+The Custom Actions of SourceTree are stored at `~/Library/Application\ Support/SourceTree/` and configured at the `actions.plist`.
+
+1) Copy bash scripts under `/bin` folder to `~/Library/Application\ Support/SourceTree/`
+
+2) Go to `SourceTree App -> Preferences Menu -> Custom Actions Tab` 
+
+3) Click `Add / Edit` custom actions
+
+![Add / Edit Custom Actions](/screenshots/advanced-custom-actions.png)
 
 ## License
 
