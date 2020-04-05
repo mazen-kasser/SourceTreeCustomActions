@@ -11,8 +11,8 @@ for filepath in "$ACTIONS_DIR/"*.sh; do
 done
 
 # Make a backup
-mkdir "$ACTIONS_DIR/actions_backups"
-cp "$SOURCETREE_DIR/actions.plist" "$ACTIONS_DIR/actions_backups/$NOW.plist"
+mkdir "$ACTIONS_DIR/actions_backup"
+cp "$SOURCETREE_DIR/actions.plist" "$ACTIONS_DIR/actions_backup/$NOW.plist"
 
 # Update custom actions
 cp "$ACTIONS_DIR/actions.plist" "$SOURCETREE_DIR/actions.plist"
