@@ -18,3 +18,6 @@ cp "$SOURCETREE_DIR/actions.plist" "$ACTIONS_DIR/actions_backups/$NOW.plist"
 cp "$ACTIONS_DIR/actions.plist" "$SOURCETREE_DIR/actions.plist"
 
 echo "Done 🎉"
+
+osascript -e 'quit app "Sourcetree"'
+osascript -e 'launch the application "Sourcetree"'
