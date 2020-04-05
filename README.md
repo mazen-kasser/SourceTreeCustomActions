@@ -4,6 +4,7 @@ A collection of custom actions:
 
 - Create Bundle
 - Pull Bundle
+- Delete Merged Branches
 
 ## How To Install
 
@@ -36,6 +37,15 @@ See how to [Create Bundle](/resources/create-bundle.gif)
 Select the bundle file then click on Actions -> Custom Actions -> Pull bundle
 ```
 See how to [Pull Bundle](/resources/pull-bundle.gif)
+
+#### 3) Delete Merged Branches
+```
+- Parameter: none
+- Shortcut: '⌘' + '⌫'
+- Output: delete merged branches to master
+
+Click on Actions -> Custom Actions -> Delete merged branches
+```
 
 ## Advanced (Add / Edit)
 
