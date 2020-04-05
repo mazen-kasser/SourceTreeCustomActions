@@ -9,7 +9,7 @@ A collection of SourceTree Custom Actions:
 
 Double click the `install` file or run in terminal the shell script `./install`
 
-![Custom Actions Installed](/screenshots/installed-custom-actions.png)
+![Custom Actions Installed](/resources/installed-custom-actions.png)
 
 **Warning ⚠️ the `install` script takes a copy of your existing SourceTree `actions.plist` file as a backup and stores it under `bin/actions_backup`. Please follow the Advanced section to manually add custom actions.**
 
@@ -19,21 +19,23 @@ From within SourceTree you could do the following:
 
 #### 1) Create Bundle
 ```
-- Shortcut: '⌘' + '↑'
 - Parameter: select the root commit
+- Shortcut: '⌘' + '↑'
 - Output: a bundle file named according to the active branch containing all the commits after the selected root commit
 
 Select the root commit then click on Actions -> Custom Actions -> Create bundle
 ```
+![Create Bundle](/resources/create-bundle.gif)
 
 #### 2) Pull Bundle
 ```
-- Shortcut: '⌘' + '↓'
 - Parameter: select the generated bundle from step 1
+- Shortcut: '⌘' + '↓'
 - Output: fetch commits and checkout a branch based on the bundle name
 
 Select the bundle file then click on Actions -> Custom Actions -> Pull bundle
 ```
+![Pull Bundle](/resources/pull-bundle.gif)
 
 ## Advanced (Add / Edit)
 
@@ -45,7 +47,7 @@ The Custom Actions of SourceTree are stored at `~/Library/Application\ Support/S
 
 3) Click `Add / Edit` custom actions
 
-![Add / Edit Custom Actions](/screenshots/advanced-custom-actions.png)
+![Add / Edit Custom Actions](/resources/advanced-custom-actions.png)
 
 ## License
 
