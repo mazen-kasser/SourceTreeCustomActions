@@ -7,8 +7,7 @@ A collection of SourceTree Custom Actions:
 
 ## How To Install
 
-- Double click the `install` file or run in terminal the shell script `./install`
-- Re-launch the SourceTree App
+Double click the `install` file or run in terminal the shell script `./install`
 
 ![Custom Actions Installed](/screenshots/installed-custom-actions.png)
 
