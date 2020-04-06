@@ -1,6 +1,6 @@
-# Source Tree Custom Actions
+# ![SourceTree Icon](/resources/sourcetree-icon.png)
 
-A collection of SourceTree Custom Actions:
+A collection of custom actions:
 
 - Create Bundle
 - Pull Bundle
@@ -52,7 +52,3 @@ The Custom Actions of SourceTree are stored at `~/Library/Application\ Support/S
 ## TODO
 
 - Merge `actions.plist` file than taking a backup copy and replace
-
-## License
-
-Feel free to use / contribute.
