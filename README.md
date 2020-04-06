@@ -25,7 +25,7 @@ From within SourceTree you could do the following:
 
 Select the root commit then click on Actions -> Custom Actions -> Create bundle
 ```
-![Create Bundle](/resources/create-bundle.gif)
+See how to [Create Bundle](/resources/create-bundle.gif)
 
 #### 2) Pull Bundle
 ```
@@ -35,7 +35,7 @@ Select the root commit then click on Actions -> Custom Actions -> Create bundle
 
 Select the bundle file then click on Actions -> Custom Actions -> Pull bundle
 ```
-![Pull Bundle](/resources/pull-bundle.gif)
+See how to [Pull Bundle](/resources/pull-bundle.gif)
 
 ## Advanced (Add / Edit)
 
