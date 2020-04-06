@@ -49,6 +49,10 @@ The Custom Actions of SourceTree are stored at `~/Library/Application\ Support/S
 
 ![Add / Edit Custom Actions](/resources/advanced-custom-actions.png)
 
+## TODO
+
+- Merge `actions.plist` file than taking a backup copy and replace
+
 ## License
 
 Feel free to use / contribute.
