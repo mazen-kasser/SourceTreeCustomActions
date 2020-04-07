@@ -40,7 +40,7 @@ See how to [Pull Bundle](/resources/pull-bundle.gif)
 
 #### 3) Delete Merged Branches
 ```
-- Parameter: none
+- Parameter: select master branch
 - Shortcut: '⌘' + '⌫'
 - Output: delete merged branches to master
 
