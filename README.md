@@ -18,30 +18,27 @@ Double click the `install` file or run in terminal the shell script `./install`
 
 From within SourceTree you could do the following:
 
-#### 1) Create Bundle
+#### 1) Create Bundle (<kbd>⌘</kbd> + <kbd>↑</kbd>)
 ```
 - Parameter: select the root commit
-- Shortcut: '⌘' + '↑'
 - Output: a bundle file named according to the active branch containing all the commits after the selected root commit
 
 Select the root commit then click on Actions -> Custom Actions -> Create bundle
 ```
 See how to [Create Bundle](/resources/create-bundle.gif)
 
-#### 2) Pull Bundle
+#### 2) Pull Bundle (<kbd>⌘</kbd> + <kbd>↓</kbd>)
 ```
 - Parameter: select the generated bundle from step 1
-- Shortcut: '⌘' + '↓'
 - Output: fetch commits and checkout a branch based on the bundle name
 
 Select the bundle file then click on Actions -> Custom Actions -> Pull bundle
 ```
 See how to [Pull Bundle](/resources/pull-bundle.gif)
 
-#### 3) Delete Merged Branches
+#### 3) Delete Merged Branches (<kbd>⌘</kbd> + <kbd>⌫</kbd>)
 ```
 - Parameter: select master branch
-- Shortcut: '⌘' + '⌫'
 - Output: delete merged branches to master
 
 Click on Actions -> Custom Actions -> Delete merged branches
